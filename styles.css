@@ -415,12 +415,12 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     text-decoration: none;
-    color: var(--accent-green);
+    color: var(--accent-pink);
     transition: color 0.3s ease;
   }
   
   .contact-item a:hover {
-    color: var(--accent-pink);
+    color: var(--accent-green);
   }
   
   .site-footer {
