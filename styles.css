@@ -578,32 +578,46 @@ header {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .brand-logo {
+    width: 120px;
+    margin-bottom: 10px;
   }
 
   .navbar {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 10px;
   }
 
   .navbar ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    align-items: center;
   }
 
   .hero {
     flex-direction: column;
     height: auto;
     padding: 20px;
-    margin: 20px;
+    margin: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .tagline {
+    font-size: 1em;
   }
 
   .slideshow {
     margin-left: 0;
     width: 100%;
-    height: 200px;
+    height: 30vh;
     margin-top: 20px;
   }
 
@@ -612,8 +626,8 @@ header {
   .contact-links,
   .collection-header,
   .collection-gallery {
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 10px;
   }
 
   .product-grid,
@@ -626,6 +640,7 @@ header {
   .item-card,
   .product {
     max-width: 90%;
+    height: auto;
   }
 
   .about-content {
@@ -636,11 +651,29 @@ header {
     max-width: 100%;
   }
 
+  .item-front,
+  .item-back {
+    position: relative;
+    transform: none !important; /* Отключение переворота */
+    height: auto;
+  }
+
+  .item-inner {
+    transform: none !important;
+  }
+
   .footer-nav a {
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
+  }
+
+  .featured-products h2,
+  .about-text h2,
+  .contact-links h2 {
+    font-size: 2em;
   }
 }
+
 
 html {
   scroll-behavior: smooth;
