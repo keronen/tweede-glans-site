@@ -574,4 +574,74 @@ header {
     font-size: 0.95em;
     color: var(--text-main);
   }
-  
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .slideshow {
+    margin-left: 0;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .featured-products,
+  .about-section,
+  .contact-links,
+  .collection-header,
+  .collection-gallery {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .product-grid,
+  .collection-gallery,
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-card,
+  .product {
+    max-width: 90%;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
