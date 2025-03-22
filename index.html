@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Made by Bob</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="brand-logo">
+        <a href="#home">
+        <img src="/img/logo/trans_bg.png" alt="Tweede Glans logo">
+        </a>
+    </div>
+    <nav class="navbar">
+        <ul>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Collections ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="earrings.html">Earrings</a></li>
+              <li><a href="bracelets.html">Bracelets</a></li>
+              <li><a href="crochet.html">Crochet</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  
+  
+
+  <!-- Hero Section -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-text">
+      <h1>Tweede Glans</h1>
+      <p class="tagline">Giving old things a new glow.</p>
+      <p>Handmade treasures from repurposed materials – bold, colorful, and full of soul.
+         Inspired by vintage finds, crafted with care, and made to stand out.</p>
+    </div>
+    <div class="slideshow">
+      <div class="slide" style="background-image: url('img/main1.jpg');"></div>
+      <div class="slide" style="background-image: url('img/main2.jpg');"></div>
+      <div class="slide" style="background-image: url('img/main3.jpeg');"></div>
+      <div class="slide" style="background-image: url('img/main4.jpg');"></div>
+      <div class="slide" style="background-image: url('img/main5.jpg');"></div>
+    </div>
+  </section>
+
+  <!-- My Expression Section -->
+  <section class="featured-products fade-in" id="collections">
+    <h2>My Expression</h2>
+    <p>Each piece tells a story, made with care and colorful imagination.</p>
+    <div class="product-grid">
+      <a href="earrings.html" class="product">
+        <img src="/img/earring.jpg" alt="Earrings">
+        <h3>Earrings</h3>
+        <span class="product-link">View Collection →</span>
+      </a>
+      <a href="bracelets.html" class="product">
+        <img src="/img/bracelet.jpg" alt="Bracelet">
+        <h3>Bracelet</h3>
+        <span class="product-link">View Collection →</span>
+      </a>
+      <a href="crochet.html" class="product">
+        <img src="/img/crochet.jpg" alt="Crochet">
+        <h3>Crochet Items</h3>
+        <span class="product-link">View Collection →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About the Artist -->
+<section class="about-section fade-in" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Meet the Maker</h2>
+        <p>Hi, I’m Vladimir – a passionate creator who loves giving old materials a new life.  
+          I handcraft bold, soulful jewelry and crochet pieces using second-hand treasures found in Dutch stores.  
+          Each creation is infused with story, color, and care.</p>
+        <p>I'm currently learning Dutch (challenging but fun!), and I’d love to hear from you if something caught your eye.</p>
+      </div>
+      <div class="about-image">
+        <img src="/img/Vladimir.jpg" alt="Photo of Vladimir">
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="contact-links fade-in" id="contact">
+    <h2>Let’s Stay in Touch</h2>
+    <p>I’d love to hear from you! Feel free to message me directly or follow my updates.</p>
+  
+    <div class="contact-methods">
+      <div class="contact-item">
+        <img src="/img/qr/whatsapp-qr.png" alt="WhatsApp QR">
+        <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+      </div>
+  
+      <div class="contact-item">
+        <img src="/img/qr/telegram-qr.png" alt="Telegram QR">
+        <a href="https://t.me/your_username" target="_blank">Telegram</a>
+      </div>
+  
+      <div class="contact-item">
+        <img src="/img/qr/channel-qr.png" alt="Telegram Channel QR">
+        <a href="https://t.me/your_channel" target="_blank">Telegram Channel</a>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#collections">Collections</a> <!-- Можно ссылку на якорь или страницу -->
+      </div>
+      <p class="copyright">&copy; 2024 Made by Bob. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+
+  <!-- JS: Hero Slideshow -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = i === index ? '1' : '0';
+          slide.style.transition = 'opacity 0.5s';
+        });
+      }
+      showSlide(currentSlide);
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }, 3000);
+    });
+  </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fadeElems = document.querySelectorAll(".fade-in");
+  
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+  
+      fadeElems.forEach(el => observer.observe(el));
+    });
+  </script>
+  
+</body>
+</html>
