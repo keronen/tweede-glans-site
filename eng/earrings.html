@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earrings Collection – Made by Bob</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="brand-logo">
+    <a href="index.html"><img src="logo1.png" alt="Tweede Glans logo"></a>
+  </div>
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="collection-header">
+  <h1>Earrings Collection</h1>
+  <p>Delicately handcrafted earrings — each pair is unique, repurposed from vintage charms, beads, and findings.</p>
+</section>
+
+<section class="collection-gallery">
+    <!-- Карточки от 1 до 50 -->
+    <div class="item-card fade-in">
+      <div class="item-inner">
+        <div class="item-front">
+          <img src="earrings/ear1.jpg" alt="Earring 1">
+          <h3>Design 1</h3>
+        </div>
+        <div class="item-back">
+          <p>Description for design 1 goes here. Replace with real info.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item-card fade-in">
+        <div class="item-inner">
+          <div class="item-front">
+            <img src="earrings/ear1.jpg" alt="Earring 1">
+            <h3>Design 1</h3>
+          </div>
+          <div class="item-back">
+            <p>Description for design 1 goes here. Replace with real info.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-card fade-in">
+        <div class="item-inner">
+          <div class="item-front">
+            <img src="earrings/ear1.jpg" alt="Earring 1">
+            <h3>Design 1</h3>
+          </div>
+          <div class="item-back">
+            <p>Description for design 1 goes here. Replace with real info.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-card fade-in">
+        <div class="item-inner">
+          <div class="item-front">
+            <img src="2025-03-22 16.26.48.jpg" alt="Earring 1">
+            <h3>Design 1</h3>
+          </div>
+          <div class="item-back">
+            <p>Description for design 1 goes here. Replace with real info.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-card fade-in">
+        <div class="item-inner">
+          <div class="item-front">
+            <img src="2025-03-22 16.26.53.jpg" alt="Earring 1">
+            <h3>Design 1</h3>
+          </div>
+          <div class="item-back">
+            <p>Description for design 1 goes here. Replace with real info.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-card fade-in">
+        <div class="item-inner">
+          <div class="item-front">
+            <img src="2025-03-22 16.26.58.jpg" alt="Earring 1">
+            <h3>Design 1</h3>
+          </div>
+          <div class="item-back">
+            <p>Description for design 1 goes here. Replace with real info.</p>
+          </div>
+        </div>
+      </div>
+    <!-- Повторяй блоки с разными номерами -->
+    <!-- ... до 50 -->
+  </section>
+  
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="copyright">&copy; 2024 Made by Bob. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeElems = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeElems.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>
