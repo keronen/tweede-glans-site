@@ -17,7 +17,6 @@
     color: var(--text-main);
   }
   
-  /* Header */
 
   /* Header */
 header {
@@ -71,7 +70,7 @@ header {
     text-decoration: none;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -79,7 +78,7 @@ header {
   }
   
   .navbar a:hover {
-    background-color: #F6B93B;
+    background-color: var(--accent-pink);
     color: black;
   }
   
@@ -119,7 +118,7 @@ header {
   }
   
   .dropdown-menu li a:hover {
-    background-color: var(--accent-lightgreen);
+    background-color: #F6B93B;
   }
   
 
