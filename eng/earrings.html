@@ -293,6 +293,8 @@
 
 
 </section>
+<button id="open-favorites" class="favorites-button">🧶 My Collection</button>
+
 
 <!-- Footer -->
 <footer class="site-footer">
@@ -306,6 +308,22 @@
   </div>
 </footer>
 
+
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close">&times;</button>
+
+    <img src="" alt="Preview" class="modal-image">
+
+    <div class="modal-description">
+      <h3></h3>
+      <p></p>
+      <div class="modal-actions">
+        <button id="add-to-favorites" class="modal-add">🧶 My Collection</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="favorites-modal" class="modal-overlay">
   <div class="modal-content wide">
@@ -327,9 +345,6 @@
     </div>
   </div>
 </div>
-
-
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -447,7 +462,7 @@
           addToFavoritesBtn.innerText = "✅ Already added";
           addToFavoritesBtn.disabled = true;
         } else {
-          addToFavoritesBtn.innerText = "💖 Add to My Jewelry";
+          addToFavoritesBtn.innerText = "🧶 Add to My Collection";
           addToFavoritesBtn.disabled = false;
         }
       });
