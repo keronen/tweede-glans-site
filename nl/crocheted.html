@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Made by Bob</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="brand-logo">
+    <a href="/eng/index.html">
+      <img src="../img/logo/logo_main.png" alt="de Tweede Glans logo">
+    </a>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Collections ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="earrings.html">Earrings</a></li>
+          <li><a href="bracelets.html">Bracelets</a></li>
+          <li><a href="crochet.html">Crochet</a></li>
+        </ul>
+      </li>
+      <li><a href="/eng/index.html#about">About</a></li>
+      <li><a href="/eng/index.html#contact">Contact</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">ENG ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="earrings.html">Nederlands</a></li>
+          <li><a href="bracelets.html">Русский</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  </div>
+</header>
+
+<section class="collection-header">
+  <h1>Bracelet Collection</h1>
+  <p>Beautifully handcrafted bracelets—each piece uniquely designed from carefully selected vintage charms, beads, and materials, giving new life and charm to timeless treasures.</p>
+</section>
+
+<section class="collection-gallery">
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+  <div class="item-card fade-in">
+    <div class="preview">
+      <img src="../img/cotalog/2025-03-22 16.26.48.jpg" alt="Item 1">
+    </div>
+    <div class="text-info" style="display: none;">
+      <h3>Design 1</h3>
+      <p>Description for design 1 goes here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-nav">
+      <a href="/eng/index.html#about">About</a>
+      <a href="/eng/index.html#contact">Contact</a>
+      <a href="/eng/index.html#collections">Collections</a> <!-- Можно ссылку на якорь или страницу -->
+    </div>
+    <p class="copyright">&copy; 2025 Made by S. All rights reserved.</p>
+  </div>
+</footer>
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <img src="" alt="Preview" class="modal-image">
+    <div class="modal-description">
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("modal");
+    const modalImg = modal.querySelector(".modal-image");
+    const modalTitle = modal.querySelector("h3");
+    const modalText = modal.querySelector("p");
+    const closeBtn = document.getElementById("modal-close");
+
+    const cards = document.querySelectorAll(".item-card");
+
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const imgSrc = card.querySelector(".preview img").src;
+        const title = card.querySelector("h3")?.innerText || "No Title";
+        const text = card.querySelector("p")?.innerText || "";
+
+        modalImg.src = imgSrc;
+        modalTitle.innerText = title;
+        modalText.innerText = text;
+
+        modal.style.display = "flex";
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("keydown", e => {
+      if (e.key === "Escape") modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeElems = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeElems.forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+
+</html>
